@@ -38,11 +38,17 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'dotenv-rails'
   gem "pronto", "~> 0.11.1"
+  gem "pronto-annotations_formatter", git: 'https://github.com/emilio2hd/pronto-annotations_formatter'
+  # gem "pronto-annotations_formatter", path: '../pronto-annotation/pronto-annotations_formatter'
   gem "pronto-rails_schema", "~> 0.11.0"
+  gem "pronto-rubocop", "~> 0.11.5"
+  gem "pronto-reek", "~> 0.11.1"
+  gem "pronto-brakeman", "~> 0.11.2"
   gem 'pry'
   gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  gem "faraday-retry", "~> 2.2"
 end
 
 group :test do

@@ -10,5 +10,5 @@ github:
 max_warnings: 150
 warnings_per_review: 30
 verbose: false
-runners: [rails_schema] # only listed runners will be executed
+runners: [rails_schema, rubocop, reek, brakeman] # only listed runners will be executed
 skip_runners: [] # all, except listed runners will be executed
