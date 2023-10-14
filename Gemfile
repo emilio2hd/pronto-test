@@ -37,6 +37,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'dotenv-rails'
+  gem "pronto", "~> 0.11.1"
+  gem "pronto-rails_schema", "~> 0.11.0"
   gem 'pry'
   gem 'rspec-rails'
   gem 'rubocop', require: false
